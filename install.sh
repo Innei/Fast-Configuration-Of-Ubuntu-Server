@@ -13,3 +13,6 @@ sudo apt update
 sudo apt install python3-dev python3-pip python3-setuptools
 sudo pip3 install thefuck
 
+#install bt
+wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+
