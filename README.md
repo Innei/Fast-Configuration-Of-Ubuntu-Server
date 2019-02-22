@@ -15,6 +15,21 @@ curl https://raw.githubusercontent.com/SorashitaInnei/Fast-Configuration-Of-Ubun
 ### How to install BaoTa patched
 
 ```bash
-curl https://raw.githubusercontent.com/SorashitaInnei/Fast-Configuration-Of-Ubuntu-Server/master/crack.sh | bash
+wget https://raw.githubusercontent.com/SorashitaInnei/Fast-Configuration-Of-Ubuntu-Server/master/crack.sh 
+chmod +x crack.sh 
+./crack.sh
+```
+
+
+
+### Install OneInStack
+
+```bash
+apt-get -y install wget screen
+wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz
+tar xzf oneinstack-full.tar.gz
+cd oneinstack 
+screen -S oneinstack
+./install.sh
 ```
 
