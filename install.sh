@@ -25,6 +25,5 @@ echo "eval $(thefuck --alias)" >> ./.zshrc
 source ./.zshrc
 zsh
 sed '/PasswordAuth/sPasswordAuth no' -i /etc/ssh/sshd_config
-#install bt
-wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+
 
