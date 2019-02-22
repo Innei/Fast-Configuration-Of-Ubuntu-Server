@@ -4,7 +4,7 @@ apt update && apt upgrde
 apt install wget python-dev curl zsh python git htop screen vim -y
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &
 
-seconds_left=10
+seconds_left=4
     echo "请等待${seconds_left}秒……"
     while [ $seconds_left -gt 0 ];do
       echo -n $seconds_left
@@ -24,6 +24,7 @@ sudo pip3 install thefuck
 echo "eval $(thefuck --alias)" >> ./.zshrc
 source ./.zshrc
 zsh
+sed '/PasswordAuth/sPasswordAuth no' -i /etc/ssh/sshd_config
 #install bt
 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 
